@@ -15,3 +15,4 @@ class Prentice(Master,School):               #当两个父类由同名的属性�
         print(f'运用{self.kongfu}制作煎饼果子')
 test = Prentice()
 test.make_cake()
+print(Prentice.__mro__)                      # Prentice.__mro__可以打印出当前类的继承关系
